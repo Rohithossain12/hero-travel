@@ -40,7 +40,7 @@ p, li{
  display: flex;   
  align-items: center;
  width: 280px;
- border: 1px solid tomato;
+
 }
 .logo img{
  width: 48px;    
@@ -123,6 +123,10 @@ font-weight: 800;
  gap: 3rem;
 
 }
+.popular-section img{
+  width: 100%;
+  height: 100%;
+}
 .text-content{
  display: flex;    
  flex-direction: column;
@@ -198,3 +202,48 @@ font-size: 24px;
 .ham-burger{
  display: none; 
 }
+ 
+/* responsive related styles */
+@media screen and (max-width:576px) {
+  .nav-option{
+   display: none; 
+  }
+  .ham-burger{
+    display: block; 
+   }
+   h3{
+   font-size: 26px;
+   }
+   .ham-burger i{
+    font-size: 26px; 
+   }
+   .container{
+    margin: 3rem auto;
+   }
+   p{
+   font-size: 16px; 
+   }
+   .explore-container h3{
+    font-size: 28px;
+   }
+   .explore-container p{
+    width: 56%;
+   }
+   .travel-input {
+    flex-direction: column;
+    width: 67%;
+    margin: auto;
+   }
+   .travel-input input,
+   .travel-input select,
+   .travel-input button{
+    width: 100%;
+    margin: 1rem;
+   }
+   .popular-section,
+    .row-1,
+    .row-2,
+    .row-3 {
+    grid-template-columns: 1fr;
+   }
+  }
