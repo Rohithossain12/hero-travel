@@ -114,5 +114,32 @@ input, select{
  color: white;
  border: 1px solid rgb(255, 84, 0);
  border-radius: 8px;
+font-weight: 800;
+}
+/* Popular Section start */
+.popular-section{
+ display:grid ; 
+ grid-template-columns: 1fr 1fr;
+ gap: 3rem;
 
+}
+.text-content{
+ display: flex;    
+ flex-direction: column;
+ row-gap: 1rem;
+ justify-content: space-between;
+}
+.text-content p,
+.text-content li {
+  text-align: left; 
+  font-size: 16px; 
+  line-height: 24px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+
+}
+.text-content p,
+.text-content li,
+.text-content h3{
+text-align: left; 
 }
